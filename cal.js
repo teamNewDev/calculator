@@ -1,67 +1,100 @@
-const num = document.querySelector(".num1");
-const num1 = document.querySelector(".num2");
-const num2 = document.querySelector(".num3");
-const num3 = document.querySelector(".num4");
-const num4 = document.querySelector(".num5");
-const num5 = document.querySelector(".num6");
-const num6 = document.querySelector(".num7");
-const num7 = document.querySelector(".num8");
-const num8 = document.querySelector(".num9");
-const num9 = document.querySelector(".num10");
-const num10 = document.querySelector(".num11");
-const num11 = document.querySelector(".num12");
-// const num12 = document.querySelector('.num13');
-const num13 = document.querySelector(".num14");
-const num14 = document.querySelector(".num15");
-const num15 = document.querySelector(".num16");
-const display = document.querySelector(".display");
+const value_1 = document.querySelector('.num1');
+const value_2 = document.querySelector('.num2');
+const value_3 = document.querySelector('.num3');
+const value_4 = document.querySelector('.num4');
+const value_5 = document.querySelector('.num5');
+const value_6 = document.querySelector('.num6');
+const value_7 = document.querySelector('.num7');
+const value_8 = document.querySelector('.num8');
+const value_9 = document.querySelector('.num9');
+const value_0 = document.querySelector('.num0');
+const addOperator = document.querySelector('.addition');
+const minusOperator = document.querySelector('.subtraction');
+const divisionOperator = document.querySelector('.division');
+const productOperator = document.querySelector('.product');
+const clear = document.querySelector('.clear');
+const equalOperator = document.querySelector('.equalSign');
+const display = document.querySelector('.display');
 
-num.addEventListener("click", () => {
-  display.append(num.innerHTML);
+//Event listeners for each button
+
+value_0.addEventListener('click', () => {
+  display.append(0);
 });
 
-num1.addEventListener("click", () => {
-  display.append(num1.innerHTML);
+value_1.addEventListener('click', () => {
+  display.append(1);
 });
-num2.addEventListener("click", () => {
-  display.append(num2.innerHTML);
+
+value_2.addEventListener('click', () => {
+  display.append(2);
 });
-num3.addEventListener("click", () => {
-  display.append(num3.innerHTML);
+
+value_3.addEventListener('click', () => {
+  display.append(3);
 });
-num4.addEventListener("click", () => {
-  display.append(num4.innerHTML);
+
+value_4.addEventListener("click", () => {
+  display.append(4);
 });
-num5.addEventListener("click", () => {
-  display.append(num5.innerHTML);
+
+value_5.addEventListener('click', () => {
+  display.append(5);
 });
-num6.addEventListener("click", () => {
-  display.append(num6.innerHTML);
+
+value_6.addEventListener('click', () => {
+  display.append(6);
 });
-num7.addEventListener("click", () => {
-  display.append(num7.innerHTML);
+
+value_7.addEventListener('click', () => {
+  display.append(7);
 });
-num8.addEventListener("click", () => {
-  display.append(num8.innerHTML);
+
+value_8.addEventListener('click', () => {
+  display.append(8);
 });
-num9.addEventListener("click", () => {
-  display.append(num9.innerHTML);
+
+value_9.addEventListener('click', () => {
+  display.append(9);
 });
-num10.addEventListener("click", () => {
-  display.append(num10.innerHTML);
+
+/**
+ * Event listener for operators
+ */
+
+addOperator.addEventListener('click', () => {
+  display.append('+');
 });
-num11.addEventListener("click", () => {
-  display.append(num11.innerHTML);
+
+minusOperator.addEventListener('click', () => {
+  display.append('-');
 });
-// num12.addEventListener('click', () => {
-//     display.append(num12.innerHTML)
-// })
-num13.addEventListener("click", () => {
-  display.append(num13.innerHTML);
+
+productOperator.addEventListener('click', () => {
+    display.append('*');
+})
+
+divisionOperator.addEventListener('click', () => {
+  display.append('/');
 });
-num14.addEventListener("click", () => {
-  display.append(num14.innerHTML);
+
+/**
+ * 
+ * Event listener for clear button
+ */
+
+clear.addEventListener('click', () => {
+  display.textContent = '';
 });
-num15.addEventListener("click", () => {
-  display.append(num15.innerHTML);
+
+equalOperator.addEventListener('click', () => {
+  
 });
+
+/**
+ * 
+ * function to Add values
+ */
+const appendToDomElement = (value, element) =>{
+  display.append(value + element)
+}
