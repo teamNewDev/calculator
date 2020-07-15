@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body{
     background:#091921;
 }
 
-.header{
+.header {
     width: 100%;
     position: fixed;
     top: 0;
