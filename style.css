@@ -1,0 +1,83 @@
+/*general style*/
+:root {
+  --output-text-size: 1.5rem;
+  --btn-text-size: 1rem;
+  --grey: #262626;
+  --green: #005552;
+  --light-black: #1D1D1E;
+  --black: #060e0b;
+  --text-color: #CDCDD3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--black);
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*style for calculator body/wrapper*/
+article {
+  background-color: var(--black);
+  color: var(--text-color);
+  height: auto;
+  width: 100vw;
+  border: 10px solid white;
+}
+
+/*style for the calculator output screen*/
+.calculator-display {
+  background-color: var(--grey);
+  height: 10rem;
+  position: relative;
+}
+
+.calculator-display p {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  font-size: var(--output-text-size);
+  font-weight: bold;
+}
+
+/*style for the calculator input buttons*/
+.calculator-btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px 5px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 25px 10px;
+  margin: 5px;
+  font-size: var(--btn-text-size);
+  color: var(--text-color)
+}
+
+.operation-btn {
+  background-color: var(--green)
+}
+
+.number-btn {
+  background-color: var(--light-black)
+}
+
+/*responsiveness for larger screens*/
+@media screen and (min-width: 700px) {
+  article {
+    max-width: 600px;
+  }
+}
