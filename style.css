@@ -1,0 +1,205 @@
+/*CSS VARIABLES*/
+:root{
+    --teal: rgb(0, 128, 128);
+    --grey: rgb(56, 56, 56);
+    --black: rgb(17, 17, 17);
+    --font: 'Work Sans', sans-serif;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black);
+    font-family: var(--font);
+    font-weight: 500;
+}
+
+/*THE CALCULATOR BODY*/
+.container{
+    border: 7px solid white;
+    width: 30vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/*THE DISPLAY OF THE CALCULATOR*/
+.display{
+    height: 25%;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.display > span{
+    color: white;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+/*THE KEYPAD OF THE CALCULATOR*/
+.keypad{
+    background-color: var(--black);
+    height: 75%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 13px;
+}
+
+/*INDIVIUAL BUTTONS FOR THE KEYPAD*/
+.button{
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*BUTTONS WITH THE TEAL COLOUR*/
+.button-teal{
+    background-color: var(--teal);
+}
+
+.button-teal:hover{
+    background-color: rgb(6, 199, 199);
+}
+
+/*BUTTONS WITH THE GREY COLOUR*/
+.button-grey{
+    background-color: var(--grey);
+}
+
+.button-grey:hover{
+    background-color: rgb(153, 153, 153);
+}
+
+/*GRID CELLS POSITIONING FOR THE BUTTONS*/
+.button-c{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.button-space{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.button-percent{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.button-plus{
+    grid-column: 4/-1;
+    grid-row: 1/2;
+}
+
+.button-minus{
+    grid-column: 4/-1;
+    grid-row: 2/3;
+}
+
+.button-times{
+    grid-column: 4/-1;
+    grid-row: 3/4;
+}
+
+.button-divide{
+    grid-column: 4/-1;
+    grid-row: 4/5;
+}
+
+.button-equals{
+    grid-column: 4/-1;
+    grid-row: 5/-1;
+}
+
+.button-backspace{
+    grid-column: 3/4;
+    grid-row: 5/-1;
+}
+
+.button-period{
+    grid-column: 2/3;
+    grid-row: 5/-1;
+}
+
+.button-zero{
+    grid-column: 1/2;
+    grid-row: 5/-1;
+}
+
+.button-one{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.button-two{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.button-three{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.button-four{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.button-five{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.button-six{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.button-seven{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.button-eight{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.button-nine{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 768px){
+    .container{
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .container{
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .container{
+        width: 80vw;
+    }
+}
