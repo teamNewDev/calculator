@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.cal-body {
+    border: 5px solid white;
+    margin: 20px auto;
+    padding: 0;
+    width: 380px;
+}
+
+.cal-screen {
+    height: 150px;
+    background-color: #222222;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cal-screen h2 {
+    color: white;
+    font-weight: 300;
+}
+
+.cal-keys {
+    padding: 8px;
+    background-color: #101010;
+}
+
+.key-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.key-row:nth-child(1) button {
+    background-color: #025656
+}
+
+.key-row:nth-child(2) button:nth-of-type(4) {
+    background-color: #025656
+}
+
+.key-row:nth-child(3) button:nth-of-type(4) {
+    background-color: #025656
+}
+
+.key-row:nth-child(4) button:nth-of-type(4) {
+    background-color: #025656
+}
+
+.key-row:nth-child(5) button:nth-child(2) {
+    background-color: #025656
+}
+
+.key-row:nth-child(5) button:nth-child(3) {
+    background-color: #025656
+}
+
+.key-row:nth-child(5) button:nth-child(4) {
+    background-color: #025656
+}
+
+button {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: #222222;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    background-color: #013b3b;
+}
