@@ -54,7 +54,16 @@ button.btn-number{
 @media screen and (max-width: 1000px) and (min-width: 200px) {
     main{
         border: 4px solid #fff;
-        height: 100vh;
+        height: auto;
         width: 100%;
+    }
+    main > section > div.btn-holder{
+        height: auto;
+        padding: 20px 0px;
+    }
+    main > section > div.btn-holder > div.btn-row{
+        grid-template-columns: repeat(4, 20%);
+        column-gap: 15px;
+        padding: 10px 0px;
     }
 }
