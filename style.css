@@ -30,6 +30,7 @@ main {
   align-items: stretch;
   margin: 10px;
   max-width: 500px;
+  max-height: 800px;
 }
 
 #screen {
