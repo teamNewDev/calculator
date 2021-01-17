@@ -16,7 +16,7 @@ body{
 #calculator{
     padding:9px;
     background-color: black;
-    max-width: 400px;
+    max-height: 600px;
 }
 
 #screen{
