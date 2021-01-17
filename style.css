@@ -71,8 +71,18 @@ article {
   background-color: var(--green)
 }
 
+.operation-btn:active {
+  background-color: var(--grey);
+  color: var(--green);
+}
+
 .number-btn {
   background-color: var(--light-black)
+}
+
+.number-btn:active {
+  background-color: var(--green);
+  color: var(--grey)
 }
 
 /*responsiveness for larger screens*/
