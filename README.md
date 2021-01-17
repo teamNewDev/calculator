@@ -1,3 +1,5 @@
 # calculator
 
-HTML/CSS/JS
+HTML/CSS/J
+
+LIVE-URL = https://rd-trends.github.io/calculator/
