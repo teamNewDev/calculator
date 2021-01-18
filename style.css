@@ -72,11 +72,11 @@ button {
   background-color: #303030;
 }
 
-.char {
+.symbolKey {
   background-color: #00555a;
 }
 
-.char:hover {
+.symbolKey:hover {
   transition: all 0.2s linear;
   background-color: #00777a;
 }
