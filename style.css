@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+:root {
+  --bg: #000000;
+  --alt-bg: #212121;
+  --prim-color: #006064;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 10px;
+  max-width: 500px;
+  max-height: 800px;
+}
+
+#screen {
+  background: var(--alt-bg);
+  padding: 25px 20px;
+  color: white;
+  height: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1.7rem;
+}
+
+#keypad {
+  background: var(--bg);
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: repeat(5, 60px);
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.btn {
+  background: var(--alt-bg);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  outline-style: dotted;
+  outline-color: var(--prim-color);
+}
+
+.green {
+  background: var(--prim-color)
+}
