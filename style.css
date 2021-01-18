@@ -61,6 +61,8 @@ main {
   border: none;
   border-radius: 5px;
   font-size: 0.8rem;
+  outline-style: dotted;
+  outline-color: var(--prim-color);
 }
 
 .green {
